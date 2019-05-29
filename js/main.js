@@ -40,7 +40,7 @@ function initAudio(element){
 	});
 	
 	//Pause Button
-	$('#play').click(function (){
+	$('#pause').click(function (){
 		audio.pause ();
 		$('#pause').hide();
 		$('#play').show();
@@ -61,13 +61,13 @@ function initAudio(element){
 		initAudio($(this));
 		$('#play').hide();
 		$('#pause').show();
-		$('#duration').faldeln();
+		$('#duration').faldeln(400);
 		audio.play();
 		showDuration();
 	});
 	
-	//Volumen control
-	$('#volumen').change(function (){
+	//Volume control
+	$('#volume').change(function (){
 		audio.volume = parseFloat (this.value/10);
 	});
 	
