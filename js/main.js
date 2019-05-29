@@ -61,7 +61,7 @@ function initAudio(element){
 		initAudio($(this));
 		$('#play').hide();
 		$('#pause').show();
-		$('#duration').faldeln(400);
+		$('#duration').fadeln(400);
 		audio.play();
 		showDuration();
 	});
