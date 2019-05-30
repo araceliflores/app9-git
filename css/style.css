@@ -1,16 +1,16 @@
 *{
     margin: 0;
-   padding: 0;
-   border: none;
-   outline: none;
+	padding: 0;
+	border: 0;
+	outline: none;
 }
 
 body{
 	font-family:arial;
 	font-size:13px;
 	line-height:1.5em;
-	color:#FF0;
-	background-color:#69F
+	color:#000;
+	background-color:#666;
 }
 
 .clearfix{
@@ -20,13 +20,13 @@ body{
 #container{
 	width:330px;
 	min-height:400px;
-	background:#0CF;
+	background:#F63;
 	overflow:auto;
 	margin:60px auto;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	border:#99C solid 2 px;
+	border:#F3F solid 2px;
 }
 
 #audio-image{
@@ -49,11 +49,11 @@ body{
 	z-index:1;
 }
 
-input#volume {
+input#volume{
 	width:95%;
 	margin-left:2%;
-	-webkit-appearance: none !important;
-	background:#933;
+	-webkit-appearance:none !important;
+	background:#00F;
 	height:1px;
 	margin-bottom:20px;
 }
@@ -70,13 +70,13 @@ input#volume {
 button#play{
 	width:70px;
 	height:70px;
-	background:url(../images/pause.png) no-repeat;float:left;
+	background:url(../images/play.png) no-repeat;float:left;
 }
 
 button#pause{
 	width:70px;
 	height:70px;
-	background:url(../images/stop.png) no-repeat;float:left;
+	background:url(../images/pause.png) no-repeat;float:left;
 }
 
 button#stop{
@@ -92,7 +92,7 @@ button#stop{
 }
 
 #playlist li{
-	cursor: pointer;
+	cursor:pointer;
 	margin:5px;
 }
 
@@ -104,10 +104,10 @@ button#stop{
 #playlist li.active{
 	font-weight:bold;
 	padding:3px;
-	background:#C6F;
+	background:#09C;
 }
 
-#progress Bar{
+#progressBar{
 	width:80%;
 	margin-left:2%;
 	margin-bottom:20px;
@@ -118,9 +118,9 @@ button#stop{
 }
 
 #progress{
-	background:: url(../images/progress.png) no-repeat;
-	height:10px;
-	display:inline-block;
+    background:url(../images/progress.png) no-repeat;
+    height:10px;
+    display:inline-block;
 }
 
 #duration{
@@ -128,6 +128,6 @@ button#stop{
 	top:0;
 	right:10px;
 	padding:4px 8px;
-	background:#0F0;
+	background:#FFF;
 	border-radius:5px;
 }
